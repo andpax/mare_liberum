@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <link href="../css/stylegeral.css"" rel="stylesheet" type="text/css" />
+        <script src="" type="text/javascript"></script>
+		<meta charset="utf-8" />
+        <title>Mare Liberum - Consulta por Pessoa</title>
+	</head>
+	
+	<body>
+		<div id="site">
+		
+			<div id="topo">
+				<img id="logo" src="../imagens/logo.jpg" />
+                <label>MARE LIBERUM</label>
+                <span>Navengando no mar da Justiça</span>
+			</div>
+			
+			<div id="menu">
+				<ul>
+                	<li><a href="../index.html">Home</a></li>
+                    <li><a href="../institucional.html">Institucional</a></li>
+                    <li><a href="../area-atuacao.html">Áreas de Atuação</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                    <li><a href="../suporte.html">Suporte</a></li>
+                </ul>
+			</div>
+			
+			<div id="siderbar">
+				<table id="tabelaservicos">
+                	<tr><td class="serv">CADASTROS</td></tr>
+                	<tr><td class="vs"><a href="cadastro-geral.html">Cadastro de Geral</a></td></tr>
+                    <tr><td class="vs"><a href="cadastro-pessoa-fisica.html">Cadastro de Pessoa Física</a></td></tr></li>
+                    <tr><td class="vs"><a href="cadastro-pessoa-juridica.html">Cadastro de Pessoa Jurídica</a></td></tr></li>
+                    <tr><td class="vs"><a href="cadastro-advogado.html">Cadastro de Advogado</a></td></tr>
+                    <tr><td class="vs"><a href="cadastro-processo.html">Cadastro de Processo</a></td></tr>
+                    <tr><td class="vs"><a href="cadastro-movimentacao-processo.html">Cadastro de Mov. de Processo</a></td></tr>
+                    <tr><td class="serv">SERVIÇOS</td></tr>
+                    <tr><td class="vs"><a href="consulta-processo.html">Consultar Processos</a></td></tr>
+                    <tr><td class="vs"><a href="consulta-advogado.html">Consultar Advgado</a></td></tr>
+                    <tr><td class="vs"><a href="consulta-pessoa.html">Consultar Pessoa</a></td></tr>
+                </table>
+			</div>
+			
+			<div id="conteudo">
+            	<span>Consultas por Pessoas</span><br>
+                <form id="frmConsProc" method="post">
+           			
+                    <label>*Escolha um ou mais campos para sua pesquisa</label><br><br>
+                    
+                    <input type="text" id="comarcaadv" name="txtComarcaAdv" class="tx">
+                    <label>Nome</label><br/>
+                    
+                    <input type="text" id="nomeadv" name="txtNomeAdv" class="tx">
+                    <label>CPF</label><br/>
+                    
+                    <input type="text" id="oab" name="txtOab" class="tx">
+                    <label>OAB</label><br/><br/>
+                    
+                    <input type="button" id="search" name="btnPesquisar" value="Pesquisar">
+                    
+                    <input type="button" id="clear" name="btnLimpar" value="Limpar">
+                    
+                </form>
+				
+			</div>
+			
+			<div id="rodape">
+				<p>
+                	Copyright 2015<br/>Anderson Nascimento<br/>Jonatas Lima<br/>
+                </p>
+			</div>			
+			
+		</div>
+	</body>
+</html>

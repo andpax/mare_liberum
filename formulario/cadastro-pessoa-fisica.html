@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <link href="../css/stylegeral.css"" rel="stylesheet" type="text/css" />
+        <script src="../js/pfisica.js" type="text/javascript"></script>
+		<meta charset="utf-8" />
+        <title>Mare Liberum</title>
+	</head>
+	
+	<body>
+		<div id="site">
+		
+			<div id="topo">
+				<img id="logo" src="../imagens/logo.jpg" />
+                <label>MARE LIBERUM</label>
+                <span>Navengando no mar da Justiça</span>
+			</div>
+			
+			<div id="menu">
+				<ul>
+                	<li><a href="../index.html">Home</a></li>
+                    <li><a href="../institucional.html">Institucional</a></li>
+                    <li><a href="../area-atuacao.html">Áreas de Atuação</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                    <li><a href="../suporte.html">Suporte</a></li>
+                </ul>
+			</div>
+			
+			<div id="siderbar">
+				<table id="tabelaservicos">
+                	<tr><td class="serv">CADASTROS</td></tr>
+                	<tr><td class="vs"><a href="cadastro-geral.html">Cadastro de Geral</a></td></tr>
+                    <tr><td class="vs"><a href="cadastro-pessoa-fisica.html">Cadastro de Pessoa Física</a></td></tr></li>
+                    <tr><td class="vs"><a href="cadastro-pessoa-juridica.html">Cadastro de Pessoa Jurídica</a></td></tr></li>
+                    <tr><td class="vs"><a href="cadastro-advogado.html">Cadastro de Advogado</a></td></tr>
+                    <tr><td class="vs"><a href="cadastro-processo.html">Cadastro de Processo</a></td></tr>
+                    <tr><td class="vs"><a href="cadastro-movimentacao-processo.html">Cadastro de Mov. de Processo</a></td></tr>
+                    <tr><td class="serv">SERVIÇOS</td></tr>
+                    <tr><td class="vs"><a href="consulta-processo.html">Consultar Processos</a></td></tr>
+                    <tr><td class="vs"><a href="consulta-advogado.html">Consultar Advgado</a></td></tr>
+                    <tr><td class="vs"><a href="consulta-pessoa.html">Consultar Pessoa</a></td></tr>
+                </table>
+			</div>
+			
+			<div id="conteudo">
+            	<span>Cadastro de Pessoa Física</span>
+				<form id="frmPFisica" method="post">
+                	<label class="descr">>Informações Pessoais</label><br/>
+                    
+                    <input type="text" id="txtNome" name="nome" placeholder="Nome" class="tx" required="required"/>
+                    <label>Nome Completo *</label><br/>
+                    
+                 <input type="text" id="txtCpf" name="cpf" placeholder="000.000.000-00" class="tx" required="required" maxlength="14" onKeyPress="formataCpf(this);"/>
+                    <label>CPF *</label><br/>
+                   
+                    <input type="text" id="txtRg" name="rg" placeholder="000.0000"/ class="tx" required="required" maxlength="8" onKeyPress="formataRg(this);"/>
+                    <label>RG *</label><br/>
+                    
+                    <input type="text" id="txtNomeMae" name="nomemae" placeholder="Nome"/ class="tx" required="required">
+                    <label>Nome da Mãe *</label><br/>
+                    
+                    <input type="text" id="txtNomePai" name="nomepai" placeholder="nome"/ class="tx">
+                    <label>Nome do Pai</label><br/>
+                    
+                    <label>>Logradouro</label><br/>
+                    
+                    <input type="text" id="txtLogradouro" name="logradouro" placeholder="Nome da rua, N000" class="tx" required="required"/>
+                    <label>Logradouro *</label><br/>
+                    
+                    <input type="text" id="txtBairro" name="bairro" placeholder="Bairro" class="tx" required="required"/>
+                    <label>Bairro *</label><br/>
+                   
+                    <input type="text" id="txtCompl" name="complemento" placeholder="Complemento" class="tx" />
+                    <label class="descr">Complemento</label><br/>
+                    
+                    <input type="text" id="txtCep" name="cep" placeholder="00000-000"  class="tx" required="required" maxlength="9" onKeyPress="formataCep(this);"/>
+                    <label>CEP *</label><br/>
+                    
+                    <input type="text" id="txtCidade" name="cidade" placeholder="Nome da cidade" class="tx" required="required" />
+                    <label>Cidade *</label><br/>
+                    
+                    
+                    <select class="selecao">
+                    	<option value="0" selected="selected" onChange="estado(this);">----Selecione o Estado----</option>
+                        <option value="1">AC</option>
+                        <option value="2">AL</option>
+                        <option value="3">AP</option>
+                        <option value="4">AM</option>
+                        <option value="5">BA</option>
+                        <option value="6">CD</option>
+                        <option value="7">DF</option>
+                        <option value="8">ES</option>
+                        <option value="9">GO</option>
+                        <option value="10">MA</option>
+                        <option value="11">MT</option>
+                        <option value="12">MS</option>
+                        <option value="13">MG</option>
+                        <option value="14">PA</option>
+                        <option value="15">PB</option>
+                        <option value="16">PR</option>
+                        <option value="17">PE</option>
+                        <option value="18">PI</option>
+                        <option value="19">RJ</option>
+                        <option value="20">RN</option>
+                        <option value="21">RS</option>
+                        <option value="22">RO</option>
+                        <option value="23">RR</option>
+                        <option value="24">SC</option>
+                        <option value="25">SP</option>
+                        <option value="26">SE</option>
+                        <option value="27">TO</option>
+                    </select>
+                    <label>UF *</label><br/>
+                    
+                    <label>>Escolariedade</label><br/>
+                    
+                    <select class="selecao">
+                    	<option value="0" selected="selected" onChange="escolariedade(this);">----Escolha uma opção----</option>
+                    	<option value="1">Analfabeto</option>
+                        <option value="2">Ensino Fundamental</option>
+                        <option value="3">Ensino Médio</option>
+                        <option value="4">Ensino Superior</option>
+                    </select>
+                    <label>Escolha a Escolaridade *</label><br/><br/>
+                    
+                    <input type="submit" id="btnConfirmar" value="Confirmar" />
+                   
+                </form>
+			</div>
+			
+			<div id="rodape">
+				<p>
+                	Copyright 2015<br/>Anderson Nascimento<br/>Jonatas Lima<br/>
+                </p>
+			</div>			
+			
+		</div>
+	</body>
+</html>

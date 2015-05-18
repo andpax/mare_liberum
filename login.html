@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <link href="css/stylegeral.css" rel="stylesheet" type="text/css" />
+		<meta charset="utf-8" />
+        <script src="js/validarlogin.js"></script>
+        <title>Mare Liberum</title>
+	</head>
+	
+	<body>
+		<div id="site">
+		
+			<div id="topo">
+				<img id="logo" src="imagens/logo.jpg" />
+                <label>MARE LIBERUM</label>
+                <span>Navengando no mar da Justiça</span>
+			</div>
+			
+			<div id="menu">
+				<ul>
+                	<li><a href="index.html">Home</a></li>
+                    <li><a href="institucional.html">Institucional</a></li>
+                    <li><a href="area-atuacao.html">Áreas de Atuação</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                </ul>
+			</div>
+
+            <div id="siderbar">
+                <table id="tabelaservicos">
+                	<tr><td class="serv">CADASTROS</td></tr>
+                	<tr><td class="vs"><a href="formulario/cadastro-geral.html">Cadastro de Geral</a></td></tr>
+                    <tr><td class="vs"><a href="formulario/cadastro-pessoa-fisica.html">Cadastro de Pessoa Física</a></td></tr></li>
+                    <tr><td class="vs"><a href="formulario/cadastro-pessoa-juridica.html">Cadastro de Pessoa Jurídica</a></td></tr></li>
+                    <tr><td class="vs"><a href="formulario/cadastro-advogado.html">Cadastro de Advogado</a></td></tr>
+                    <tr><td class="vs"><a href="formulario/cadastro-processo.html">Cadastro de Processo</a></td></tr>
+                    <tr><td class="vs"><a href="formulario/cadastro-movimentacao-processo.html">Cadastro de Mov. de Processo</a></td></tr>
+                    <tr><td class="serv">SERVIÇOS</td></tr>
+                    <tr><td class="vs"><a href="formulario/consulta-processo.html">Consultar Processos</a></td></tr>
+                    <tr><td class="vs"><a href="formulario/consulta-advogado.html">Consultar Advgado</a></td></tr>
+                    <tr><td class="vs"><a href="formulario/consulta-pessoa.html">Consultar Pessoa</a></td></tr>
+                </table>
+            </div>
+              
+			<div id="conteudo">
+            	<span>Entre com o seu Longin de Usuário</span>
+				<form id="formLogin" method="post" />
+                	
+                    <input type="text" id="txtLogin" name="nome" placeholder="Digite seu nome" maxlength="25" class="tx" />
+                    <label>Usuário</label><br/>
+                    		    	            
+                   	<input type="password" id="txtSenha" name="senha" placeholder="Digite sua senha" class="tx" />
+                     <label>Senha</label><br/><br/>
+                     
+          			<input type="submit" id="btnEntrar" value="Entrar" onClick="validarNome(); validarSenha();" />
+                    <br/><br/>
+                    <p class="senha">Esqueceu a senha? <a href="#">Clique aqui.</a></p><br><br>
+                    <p class="senha">Não sou cadastrado. <a href="formulario/cadastro-geral.html">Clique aqui.</a>
+                    
+                </form>
+			</div>
+			
+			<div id="rodape">
+				<p>
+                	Copyright 2015<br/>Anderson Nascimento<br/>Jonatas Lima<br/>
+                </p>
+			</div>			
+			
+		</div>
+	</body>
+</html>

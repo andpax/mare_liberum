@@ -1,0 +1,432 @@
+/* CSS Document */
+
+* {
+	margin:0;
+	paddig:0;
+	border:0;
+}
+
+body {
+	background:#ececec;
+}
+
+/* Corpo do Site */
+div#site {
+	width:990px;
+	margin:auto;
+	padding:5px;
+}
+
+/* Configuraçãodo topo da página */
+div#topo {
+	background:#fff;
+	width:100%;
+	height:150px;
+}
+
+div#topo img#logo {
+	height:120px;
+	margin:20px;
+}
+
+div#topo label {
+	position: absolute;
+	left: 400px;
+	top: 50px;
+	position: absolute;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:50px;
+}
+
+div#topo span {
+	position:absolute;
+	left:460px;
+	top:110px;
+	font-family:Blackadder ITC;
+	font-size:20px;
+}
+
+/* Configuração do Menu */
+div#menu {
+	background-image:url(../imagens/background-menu.fw.png);
+	background-repeat:no-repeat;
+	height:35px;
+	margin-top:5px;
+}
+
+div#menu ul li {
+	display:inline;
+}
+
+div#menu ul li a {
+	font:18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+	float:left;
+	padding:6px 38px;
+}
+
+div#menu ul li a:hover {
+	background:#666;
+	color:#FFF;
+	transition: background-color 1s;
+}
+
+/* Configuração da barra latera(menu de cadastro e serviços) */
+
+div#siderbar {
+	background:#FFF;
+	height:528px;
+	margin-top:5px;
+	margin-bottom:5px;
+	width:227px;
+	float:left;
+}
+
+div#siderbar table#tabelaservicos {
+	border: 1px solid #fff;
+	border-spacing: 0px;
+}
+
+div#siderbar table#tabelaservicos td {
+	border: 1px solid #fff;
+	padding: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#CCC;
+}
+
+div#siderbar table#tabelaservicos a {
+	text-decoration:none;
+	color:#000;
+	
+}
+div#siderbar table#tabelaservicos td.vs:hover {
+	background:#666;
+	transition: background-color 1s;
+}
+div#siderbar table#tabelaservicos  a:hover {
+	color:#FFF;
+}
+
+div#siderbar table#tabelaservicos td.serv {
+	font-size: 15px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#fff; 
+	text-align:center;
+	background-color:#000;
+}
+
+
+/* Configuraçao do conteúdo da página */
+div#conteudo {
+	background:#fff;
+	height:528px;
+	width:750px;
+	margin-top:5px;
+	float:right;
+}
+
+div#conteudo span {
+	position:absolute;
+	margin-top:10px;
+	margin-left:250px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
+
+/* Configuração do rodapé */
+div#rodape {
+	background:#ececec;
+	height:80px;
+	clear:both;
+}
+
+div#rodape {
+	border-top: 1px solid #606060;
+}
+
+div#rodape p {
+	text-align:center;
+	padding-top:15px;
+}
+
+/* Configuração do formulário */
+
+div#conteudo form {
+	font-family: Verdana,Tahoma,sans-serif; 
+	font-size: 13px; 
+	max-width: 700px; 
+	margin: 50px 100px 0px 50px;
+}
+
+div#conteudo input.tx {
+	width: 250px; 
+	padding: 4px; 
+	color: black; 
+	margin-left: 20px; 
+	border: 1px solid; 
+	margin-bottom:5px;
+}
+
+div#conteudo label {
+	padding:0px;
+	margin-left:20px;
+	color: #000; 
+    font-weight: bold; 
+}
+
+div#conteudo select.selecao {
+	width: 260px; 
+	padding: 4px; 
+	color: black; 
+	margin-left: 20px; 
+	border: 1px solid; 
+	margin-bottom:5px;
+}
+
+div#conteudo input#btnConfirmar {
+	background-color:#CCC; 
+	height: 30px; 
+	width: 80px; 
+	font-weight: bold; 
+	margin-left:20px;
+}
+
+div#conteudo input#search {
+	background-color:#CCC; 
+	height: 30px; 
+	width: 80px; 
+	font-weight: bold; 
+	margin-left:20px;
+}
+
+div#conteudo input#clear {
+	background-color:#CCC; 
+	height: 30px; 
+	width: 80px; 
+	font-weight: bold; 
+	margin-left:20px;
+}
+
+div#conteudo input#btnEntrar {
+	background-color:#CCC; 
+	height: 30px; 
+	width: 80px; 
+	font-weight: bold; 
+	margin-left:20px;
+}
+
+div#conteudo form p.senha {
+	position:absolute;
+	margin-left:20px;
+}
+
+div#conteudo p.senha a {
+	text-decoration:none;
+}
+
+div#conteudo p.senha a:hover {
+	color:#F00;
+}
+
+/*Formatação do conteúdo da pg home*/
+div#conteiner {
+	height:528px;
+	width:750px;
+	margin-top:5px;
+	float:right;
+}
+
+.bloco-um {
+	background: #fff;
+	height: 168px;
+	width: 750px;
+	margin-top: 4px;
+	border-radius: 7px;
+}
+
+.img-um {
+	margin-top:10px;
+	margin-left:10px;
+	height:150px;
+}
+
+.pblocoum {
+	float:right;
+	width:70%;
+	text-align:justify;
+	margin-top:15px;
+	margin-right:2px;
+}
+
+.bloco-dois {
+	background: #fff;
+	height: 168px;
+	width: 750px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border-radius: 7px;
+}
+
+.img-dois {
+	margin-top:10px;
+	margin-left:10px;
+	height:150px;
+}
+
+.pblocodois {
+	float:right;
+	width:70%;
+	text-align:justify;
+	margin-top:15px;
+	margin-right:2px;
+}
+
+.bloco-tres {
+	background: #fff;
+	height: 168px;
+	width: 750px;
+	border-radius: 7px;
+}
+
+.img-tres {
+	margin-top:10px;
+	margin-left:10px;
+	height:150px;
+}
+
+.pblocotres {
+	float:right;
+	width:70%;
+	text-align:justify;
+	margin-top:15px;
+	margin-right:2px;
+}
+
+.branco {
+	font:italic bold 12px/30px Georgia, serif;
+}
+
+.titulo {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+/*Formatação do conteúdo da pg contato*/
+
+.cnt {
+	position:relative;
+	text-align:center;
+	margin:0 auto;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:18px;
+	padding-bottom:20px;
+	padding:50px;
+}
+
+hr.separador {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+	width:600px; 
+	margin: 0 auto;
+	padding-bottom:100px;
+}
+
+.pf {
+	text-align:center;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:14px;
+}
+
+/* Formatação do conteúdo da página area-atuacao*/
+
+.titulo {
+	text-align:center;
+	margin-top:20px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+hr.line {
+	width:95%;
+	border:2px groove #000;
+	margin: 0 auto;
+	text-align:center;
+	
+}
+
+.pgrf {
+	text-align:justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:15px;
+    
+}
+
+/* Formatação do conteúdo da página institucional*/
+.topico {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	margin-left:15px;
+}
+
+.title {
+	text-align:center;
+	margin-top:20px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+hr.linne {
+	width:95%;
+	border:2px groove #000;
+	margin: 0 auto;
+	text-align:center;
+	pad
+}
+
+.pgrfo {
+	text-align:justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:15px;
+}
+
+/* Formatção do conteúdo da págida suporte */
+
+.sprt {
+	text-align:center;
+	margin-top:20px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+hr.ln {
+	width:95%;
+	border:2px groove #000;
+	margin: 0 auto;
+	text-align:center;
+	pad
+}
+.spt {
+	position:relative;
+	text-align:center;
+	margin:0 auto;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:18px;
+	padding-bottom:20px;
+	padding:50px;
+	
+}
+
+.photo {
+	border-radius:10px;
+	margin-left:10px;
+}
+
+.pp{
+	margin-left:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+}

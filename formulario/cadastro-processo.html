@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <link href="../css/stylegeral.css"" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/processo.js"></script>
+		<meta charset="utf-8" />
+        <title>Mare Liberum</title>
+	</head>
+	
+	<body>
+		<div id="site">
+		
+			<div id="topo">
+				<img id="logo" src="../imagens/logo.jpg" />
+                <label>MARE LIBERUM</label>
+                <span>Navengando no mar da Justiça</span>
+			</div>
+			
+			<div id="menu">
+				<ul>
+                	<li><a href="../index.html">Home</a></li>
+                    <li><a href="../institucional.html">Institucional</a></li>
+                    <li><a href="../area-atuacao.html">Áreas de Atuação</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                    <li><a href="../suporte.html">Suporte</a></li>
+                </ul>
+			</div>
+			
+			<div id="siderbar">
+				<table id="tabelaservicos">
+                	<tr><td class="serv">CADASTROS</td></tr>
+                	<tr><td class="vs"><a href="cadastro-geral.html">Cadastro de Geral</a></td></tr>
+                    <tr><td class="vs"><a href="cadastro-pessoa-fisica.html">Cadastro de Pessoa Física</a></td></tr></li>
+                    <tr><td class="vs"><a href="cadastro-pessoa-juridica.html">Cadastro de Pessoa Jurídica</a></td></tr></li>
+                    <tr><td class="vs"><a href="cadastro-advogado.html">Cadastro de Advogado</a></td></tr>
+                    <tr><td class="vs"><a href="cadastro-processo.html">Cadastro de Processo</a></td></tr>
+                    <tr><td class="vs"><a href="cadastro-movimentacao-processo.html">Cadastro de Mov. de Processo</a></td></tr>
+                    <tr><td class="serv">SERVIÇOS</td></tr>
+                    <tr><td class="vs"><a href="consulta-processo.html">Consultar Processos</a></td></tr>
+                    <tr><td class="vs"><a href="consulta-advogado.html">Consultar Advgado</a></td></tr>
+                    <tr><td class="vs"><a href="consulta-pessoa.html">Consultar Pessoa</a></td></tr>
+                </table>
+            </div>
+			
+			<div id="conteudo">
+            	<span>Cadastro de Processo</span>
+				<form id="frmCadProcesso" method="post">
+                
+                	<input type="text" id="txtNProcs" name="numeroprocs" class="tx" required="required" />
+                    <label>Número do Processo *</label><br/>
+                    
+                    <select class="selecao" id="processo">
+                    	<option value="0" selected="selected" onChange="validaProcesso(this);">----Escolha um Processo----</option>
+                        <option value="1">Ação Civil Coletiva</option>
+                        <option value="2">Ação Civil Pública</option>
+                        <option value="3">Carta de Ordem</option>
+                        <option value="4">Consignação em Pagamento</option>
+                        <option value="5">Embargos de Terceiro</option>
+                        <option value="6">Habeas Corpus</option>
+                        <option value="7">Ação Anulatória de Cláusulas Convencionais</option>
+                        <option value="8">Correição Parcial ou Reclamação Correicional</option>
+                        <option value="9">Petição</option>
+                        <option value="10">Requisição de Pequeno Valor</option>
+                    </select>
+                    <label>Tipo do Processo *</label><br/>
+                    
+                    <input type="text" id="txtComarca" name="comarca" class="tx" required="required"/>
+                    <label>Comarca *</label><br/>
+                    
+                    <input type="text" id="txtDescrProcs" name="descrprocs" class="tx" required="required" />
+                    <label>Descrição do Processo *</label><br/>
+                    
+                    <select class="selecao" id="parteEnv">
+                    	<option value="0" selected="selected">----Selecione a parte envolvida----</option>
+                        <option value="">Autor</option>
+                        <option value="">Réu</option>
+                        <option value="">Advogado(s) da Vítima</option>
+                        <option value="">Advogado(s) do Réu</option>  
+                    </select>
+                    <label>Partes Envolvidas *</label><br/>
+                    
+                    <input type="text" id="txtMovProcs" name="movprocs" class="tx" required="required"/>
+                    <label>Movimentação do Processo</label><br/><br/>
+                    
+                    <input type="submit" id="btnConfirmar" value="Confirmar" />
+                   
+                </form>
+			</div>
+			
+			<div id="rodape">
+				<p>
+                	Copyright 2015<br/>Anderson Nascimento<br/>Jonatas Lima<br/>
+                </p>
+			</div>			
+			
+		</div>
+	</body>
+</html>
+
+
